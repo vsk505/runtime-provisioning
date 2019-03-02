@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y unzip
 RUN apt-get update && apt-get install -y curl
 
 # MuleEE installation:
-ENV MULE_VERSION=3.9.0
+ENV MULE_VERSION=4.1.4
 COPY ./mule-ee-distribution-standalone-$MULE_VERSION.zip /opt/
 
 WORKDIR /opt
@@ -42,7 +42,7 @@ ENV MULE_HOME=/opt/mule
 
 # Mule License File installation
 WORKDIR /opt/mule
-COPY ./muleLicenseKey.lic /opt/mule/conf/
+#COPY ./muleLicenseKey.lic /opt/mule/conf/
 # Remove unnecesary files
 RUN rm -Rf examples
 # Define mount points
