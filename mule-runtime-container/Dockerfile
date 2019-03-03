@@ -37,9 +37,9 @@ ENV MULE_VERSION=4.1.4
 COPY ./mule-ee-distribution-standalone-$MULE_VERSION.zip /opt/
 
 WORKDIR /opt
-RUN unzip /opt/mule-ee-distribution-standalone-$MULE_VERSION.zip
+RUN unzip /opt/mule-ee-distribution-standalone-$MULE_VERSION.zip -d mule
 RUN rm -f /opt/mule-ee-distribution-standalone-$MULE_VERSION.zip
-RUN mv /opt/mule-ee-distribution-standalone-$MULE_VERSION* mule
+#RUN mv /opt/mule-ee-distribution-standalone-$MULE_VERSION mule
 COPY ./arm_register_server.sh /opt/mule/bin/
 ENV MULE_HOME=/opt/mule
 
