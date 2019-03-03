@@ -66,4 +66,4 @@ EXPOSE 8081
 # HTTPS Service Port
 EXPOSE 8091
 # Environment and execution:
-#CMD ["/opt/mule/bin/mule", "-M-Dmule.agent.enabled=false"]
+CMD ["/opt/mule/bin/mule", "-M-Dmule.agent.enabled=false"]
