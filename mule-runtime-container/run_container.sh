@@ -1,7 +1,7 @@
 #!/bin/bash  
 
 image_tag=$1
-mule_version=3.9.0
+mule_version=4.1.4
 repository=mule-ee-runtime-${mule_version}
 container=mule-ee-runtime-${mule_version}-${image_tag}
 # From this shared directory between the host operating system and the Docker container, you will have access to log files.
