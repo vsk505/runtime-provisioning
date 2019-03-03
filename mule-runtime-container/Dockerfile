@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y unzip
 RUN apt-get update && apt-get install -y curl
 
 # GET MULE RUNTIME
-wget http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-$MULE_VERSION.zip
+#RUN wget http://s3.amazonaws.com/new-mule-artifacts/mule-ee-distribution-standalone-$MULE_VERSION.zip
 
 # MuleEE installation:
 ENV MULE_VERSION=4.1.4
