@@ -3,7 +3,7 @@
 # Based on: Oracle JDK
 # Pull base image.
 FROM ubuntu:16.04
-MAINTAINER MuleSoft Professional Services
+MAINTAINER VSK505
 
 #Set project labels
 LABEL com.mulesoft.runtime.container.baservices.version="1.0.0"
